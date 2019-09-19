@@ -11,10 +11,17 @@
     }
 }
 
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+  
+
 .basicbox{
-    height: 300px;
-    line-height: 300px;
-    font-size: 4em;
+    height: 500px;
+    line-height: 500px;
+    font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     opacity: 0;
@@ -36,6 +43,7 @@
 
 .box2 {
     animation-delay: 1000ms;
+    color: white;
 
     background: #654ea3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
