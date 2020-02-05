@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Abel', serif;
+}
+
+*:focus{
+  outline:none;
+}
+
+body{
+  background: #ED213A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.App{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box{
+  height: 100vh;
+  width:100vw;
+}
+
+.intro{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #bdc3c7;
+  font-size:3rem;
+}
+
+.intro .name{
+  color:#FFF;
+}
+
+
+/* HELPER CLASSES */
+.bow{
+  border:1px solid white;
+}
+.bor{
+  border:1px solid red;
+}
+
+.flerow{
+  display:flex;
+  flex-direction: row;
+}
+
+.flecol{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
