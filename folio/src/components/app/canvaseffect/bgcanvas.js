@@ -9,7 +9,7 @@ class BGCanvas extends React.Component{
     }
     render(){
         return(
-            <canvas id="draw" ref="draw" className="bow" width="1000px" height="500px"></canvas>
+            <canvas id="draw" ref="draw" className="" width="1280px" height="768px"></canvas>
         )
     };
 }

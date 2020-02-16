@@ -1,3 +1,105 @@
 .contact{
-    background: #555;;
+    padding:0;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#contact > div > span{
+    margin-top:2rem;
+    color:white;
+}
+
+#contact > div > .sechead__under{
+    border-top:5px solid white;
+    width:50%;
+}
+
+.contact-message{
+    color: #e74c3c;
+    font-size:2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    opacity: 0;
+}
+
+.contact-links{
+    margin-bottom: 30vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+}
+
+.contact-icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:2rem;
+    width:6rem;
+    height:6rem;
+    margin:1rem 1rem;
+    background:#222;
+    border:1px solid #333;
+    overflow: hidden;
+    transition: background 0.5s ease-out;
+}
+
+.contact-icon svg{
+    transform: scale(2);
+}
+
+.contact-icon:hover{
+    padding-top:2rem;
+    animation-name: translateFromUp;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+    background:#e74c3c;
+    transition: background 0.5s ease-out;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#AEAEAE;
+    border:1px solid #333;
+    background: #222;
+    width:100%;
+    height:30vh;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+}
+
+.button-up{
+    padding:1rem;
+    transform: translateY(-4rem);
+    background: #e74c3c;
+}
+.button-up:hover{
+    color:#FFFFFF;
+}
+.button-up svg{
+    transform: scale(2);
+}
+
+@keyframes translateFromUp {
+    0% {
+        opacity:0.5;
+        padding-top: 0rem;
+    }
+    100% {
+        opacity:1;
+        padding-top:2rem;
+    }
+}
+
+
+
+@media all and (max-width: 600px){
+    .contact-message{
+        font-size: 1.5rem;
+        margin: 20px;
+    }
 }

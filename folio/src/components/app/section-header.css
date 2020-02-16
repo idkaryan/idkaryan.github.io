@@ -1,13 +1,16 @@
 .sechead{
     margin-top:4rem;
-    --themecolor: white;
+    margin-bottom: 6rem;
+    --themecolor: #444;
 }
 .sechead__title{
     font-size:4rem;
     text-transform: uppercase;
     color: var(--themecolor, white);
+    opacity: 0;
 }
 .sechead__under{
     border-top:5px solid var(--themecolor, white);
+    opacity: 0;
     width:50%;
 }

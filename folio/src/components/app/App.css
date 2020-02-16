@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Abel&display=swap');
+
 *{
   margin:0;
   padding:0;
@@ -11,9 +12,10 @@
 }
 
 body{
-  background: #ED213A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .App{
   display:flex;
@@ -22,8 +24,9 @@ body{
 }
 
 .box{
-  height: 100vh;
-  width:100vw;
+  min-height: 100vh;
+  width:100%;
+  padding:2rem;
 }
 
 .intro{
@@ -33,10 +36,13 @@ body{
   flex-direction: column;
   color: #bdc3c7;
   font-size:3rem;
+  z-index:4;
 }
 
 .intro .name{
   color:#FFF;
+  font-family: 'Kaushan Script', serif;
+  font-size: 1.2em;
 }
 
 
@@ -57,4 +63,53 @@ body{
   display:flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/* ANIMATION CLASSES */
+.highlight{
+  color:#e74c3c;
+  transition: color ease-in 0.5s;
+}
+.slide-left{
+  animation: slide-left 0.7s ease-out forwards;
+/*   transform: rotateY(0deg);
+  transition: transform 0.7s ease-out 0.1s; */
+}
+.slide-right{
+  animation: slide-right 0.7s ease-out forwards;
+}
+.appear{
+  animation: just-appear 1s ease-out forwards 0.5s;
+}
+
+@keyframes just-appear{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity:0;
+    transform: translateX(-30rem);
+  }
+  100%{
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity:0;
+    transform: translateX(30rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
