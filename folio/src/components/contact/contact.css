@@ -16,7 +16,7 @@
 }
 
 .contact-message{
-    color: #e74c3c;
+    color: #EFEFEF;
     font-size:2rem;
     text-align: center;
     margin-bottom: 5rem;
@@ -51,7 +51,7 @@
 .contact-icon:hover{
     padding-top:2rem;
     animation-name: translateFromUp;
-    animation-duration: 0.2s;
+    animation-duration: 0.4s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-direction: forwards;
@@ -87,7 +87,10 @@ footer{
 @keyframes translateFromUp {
     0% {
         opacity:0.5;
-        padding-top: 0rem;
+        padding-top: 2rem;
+    }
+    50%{
+        padding-top: 1rem;
     }
     100% {
         opacity:1;
