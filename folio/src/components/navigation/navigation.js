@@ -3,7 +3,7 @@ import './navigation.css';
 
 const Navigation = (props) => {
 
-    const hrefLink = "#undefined";
+    const hrefLink = "#";
 
     const onAboutClick = (clickTarget)=>{
         let targetDiv = document.getElementById(clickTarget);
@@ -36,10 +36,10 @@ const Navigation = (props) => {
             </button>
             <nav className="navigation-links">
                 <ul>
-                    <li><a id="nav-home" href={hrefLink} onClick={()=>{onAboutClick('home')}}>HOME</a></li>
-                    <li><a id="nav-about" href={hrefLink} onClick={()=>{onAboutClick('about')}}>ABOUT</a></li>
-                    <li><a id="nav-projects" href={hrefLink} onClick={()=>{onAboutClick('projects')}}>PROJECTS</a></li>
-                    <li><a id="nav-contact" href={hrefLink} onClick={()=>{onAboutClick('contact')}}>CONTACT</a></li>
+                    <li><a id="nav-home" href={hrefLink + "home"} onClick={()=>{onAboutClick('home')}}>HOME</a></li>
+                    <li><a id="nav-about" href={hrefLink + "about"} onClick={()=>{onAboutClick('about')}}>ABOUT</a></li>
+                    <li><a id="nav-projects" href={hrefLink + "projects"} onClick={()=>{onAboutClick('projects')}}>PROJECTS</a></li>
+                    <li><a id="nav-contact" href={hrefLink + "contact"} onClick={()=>{onAboutClick('contact')}}>CONTACT</a></li>
                 </ul>
             </nav>
             <nav id="mobile-nav" className="navigation-links-mobile">
