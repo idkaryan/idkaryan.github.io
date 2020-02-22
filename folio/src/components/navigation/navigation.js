@@ -5,7 +5,8 @@ const Navigation = (props) => {
 
     const hrefLink = "#";
 
-    const onAboutClick = (clickTarget)=>{
+    const onAboutClick = (e, clickTarget)=>{
+        e.preventDefault();
         let targetDiv = document.getElementById(clickTarget);
         if(!targetDiv){
             return;
@@ -36,18 +37,18 @@ const Navigation = (props) => {
             </button>
             <nav className="navigation-links">
                 <ul>
-                    <li><a id="nav-home" href={hrefLink + "home"} onClick={()=>{onAboutClick('home')}}>HOME</a></li>
-                    <li><a id="nav-about" href={hrefLink + "about"} onClick={()=>{onAboutClick('about')}}>ABOUT</a></li>
-                    <li><a id="nav-projects" href={hrefLink + "projects"} onClick={()=>{onAboutClick('projects')}}>PROJECTS</a></li>
-                    <li><a id="nav-contact" href={hrefLink + "contact"} onClick={()=>{onAboutClick('contact')}}>CONTACT</a></li>
+                    <li><a id="nav-home" href={hrefLink + "home"} onClick={(e)=>{onAboutClick(e, 'home')}}>HOME</a></li>
+                    <li><a id="nav-about" href={hrefLink + "about"} onClick={(e)=>{onAboutClick(e, 'about')}}>ABOUT</a></li>
+                    <li><a id="nav-projects" href={hrefLink + "projects"} onClick={(e)=>{onAboutClick(e, 'projects')}}>PROJECTS</a></li>
+                    <li><a id="nav-contact" href={hrefLink + "contact"} onClick={(e)=>{onAboutClick(e, 'contact')}}>CONTACT</a></li>
                 </ul>
             </nav>
             <nav id="mobile-nav" className="navigation-links-mobile">
                 <ul>
-                    <li><a id="nav-home-mobile" href={hrefLink} onClick={()=>{onAboutClick('home')}}>HOME</a></li>
-                    <li><a id="nav-about-mobile" href={hrefLink} onClick={()=>{onAboutClick('about')}}>ABOUT</a></li>
-                    <li><a id="nav-projects-mobile" href={hrefLink} onClick={()=>{onAboutClick('projects')}}>PROJECTS</a></li>
-                    <li><a id="nav-contact" href={hrefLink} onClick={()=>{onAboutClick('contact')}}>CONTACT</a></li>
+                    <li><a id="nav-home-mobile" href={hrefLink} onClick={(e)=>{onAboutClick(e, 'home')}}>HOME</a></li>
+                    <li><a id="nav-about-mobile" href={hrefLink} onClick={(e)=>{onAboutClick(e, 'about')}}>ABOUT</a></li>
+                    <li><a id="nav-projects-mobile" href={hrefLink} onClick={(e)=>{onAboutClick(e, 'projects')}}>PROJECTS</a></li>
+                    <li><a id="nav-contact" href={hrefLink} onClick={(e)=>{onAboutClick(e, 'contact')}}>CONTACT</a></li>
                 </ul>
             </nav>
         </div>
