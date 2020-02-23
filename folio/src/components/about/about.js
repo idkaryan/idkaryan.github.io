@@ -5,6 +5,7 @@ import Hexagon from './hexagon';
 
 import SectionHeader from '../app/section-header';
 
+
 import IMAGE_ARYAN from '../../assets/aryan.png';
 
 import IMAGE_JAVASCRIPT from '../../assets/javascript.png';
@@ -18,6 +19,7 @@ import IMAGE_HTML from '../../assets/html.png';
 import IMAGE_BOOTSTRAP from '../../assets/bootstrap.png';
 import IMAGE_CSHARP from '../../assets/csharp.png';
 import IMAGE_GODOT from '../../assets/godot.svg';
+import IMAGE_NGINX from '../../assets/nginx.png';
 
 const About = (props)=>{
 
@@ -27,19 +29,19 @@ const About = (props)=>{
     const DATA_HEXAGONS = [
         {
             header: "speed", 
-            subheader: "user experience is extremely important to me"
+            subheader: "User experience is extremely important to me."
         },
         {
             header: "reliability", 
-            subheader: "my applications handle all errors well"
+            subheader: "My apps handle all errors well."
         },
         {
             header: "security", 
-            subheader: "I keep up with modern security practices"
+            subheader: "I keep up with modern security practices."
         },
         {
             header: "human touch", 
-            subheader: "I like when my apps leave a lasting impression on people with the first interaction, much like with meeting interesting people"
+            subheader: "I like my apps leaving a lasting impression on people with the first interaction, much like with meeting interesting people."
         },
     ];
 
@@ -116,6 +118,7 @@ const About = (props)=>{
                     <img title="Microsoft SQL SERVER" src={IMAGE_MSSQL} alt="Microsoft SQL SERVER"/>
                     <img title="C SHARP" src={IMAGE_CSHARP} alt="C SHARP"/>
                     <img title="SCSS/SASS" src={IMAGE_SASS} alt="SCSS/SASS"/>
+                    <img title="NGINX" src={IMAGE_NGINX} alt="NGINX"/>
                     <img title="Godot Game Engine" src={IMAGE_GODOT} alt="Godot Game Engine"/>
                     <img title="Bootstrap 4" src={IMAGE_BOOTSTRAP} alt="Bootstrap 4"/>
                 </div>
