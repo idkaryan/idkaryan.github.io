@@ -19,7 +19,7 @@ const Projects = props => {
 
     return(
         <div id="projects" className="flecol projects box obs-section">
-            <ProjectModal title={modalObject.title} desc={modalObject.desc} piclink={modalObject.piclink} techstack={modalObject.techstack}/>
+            <ProjectModal title={modalObject.title} desc={modalObject.desc} piclink={modalObject.piclink} techstack={modalObject.techstack} link={modalObject.link}/>
             
             <SectionHeader>Projects</SectionHeader>
             

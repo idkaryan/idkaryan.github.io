@@ -22,7 +22,8 @@ const ProjectItemsList = props=>{
                     title:"ezez URL Shortener", 
                     desc:"This is a reimplementation of tiny.cc with the core features and which uses MongoDB in the backend as a database. Will soon buy a shorter domain and put this online for people to use.", 
                     piclink:PROJECTIMAGE_EZEZ, 
-                    techstack:["Node.js", "React", "MongoDB", "Mongoose", "Express"]
+                    techstack:["Node.js", "React", "MongoDB", "Mongoose", "Express"],
+                    link: "https://ezezlink.herokuapp.com"
                 }}
             />
             
@@ -32,9 +33,10 @@ const ProjectItemsList = props=>{
                 projectThumb={PROJECTIMAGE_APOLOGY}
                 projectValues={{
                     title:"Apology - a brick breaking story", 
-                    desc:"I created this game while working as a web developer full time in 2019. Created the art as well as did the programming. Solved complex problems such as creating level generator, boss fight, dialogue system. Got good feedback from people who played this as well. link : https://play.google.com/store/apps/details?id=xyz.greeencircles.apology", 
+                    desc:"I created this game while working as a web developer full time in 2019. Created the art as well as did the programming. Solved complex problems such as creating level generator, boss fight, dialogue system. Got good feedback from people who played this as well.", 
                     piclink:PROJECTIMAGE_APOLOGY, 
-                    techstack:["Godot 3.1.1", "GDScript"]
+                    techstack:["Godot 3.1.1", "GDScript"],
+                    link: "https://play.google.com/store/apps/details?id=xyz.greeencircles.apology"
                 }}
             />
 

@@ -51,6 +51,8 @@
   /*   transform: rotateY(180deg); */
   transition: transform 0.2s ease-out 0.1s;
 }
+
+/* FOR TABLETS */
 @media all and (max-width: 920px){
   .about__info{
     flex-direction: column;
@@ -71,6 +73,7 @@
   }
 }
 
+/* FOR MOBILE PHONES */
 @media all and (max-width: 600px){
   .about__info{
     flex-direction: column !important;
@@ -86,12 +89,14 @@
   }
   .tech{
     max-width: 100%;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    /* border:1px solid red; */
   }
   .tech img{
-    margin:2rem 0;
-    width: 60%;
+    margin:0.5rem;
+    width: 40%;
+    /* border:1px solid green; */
     height: auto;
   }
 

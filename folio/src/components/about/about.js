@@ -41,7 +41,7 @@ const About = (props)=>{
         },
         {
             header: "human touch", 
-            subheader: "I like my apps leaving a lasting impression on people with the first interaction, much like with meeting interesting people."
+            subheader: "I like my apps leaving a lasting impression with the first interaction."
         },
     ];
 
