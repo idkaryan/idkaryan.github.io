@@ -110,13 +110,13 @@ const About = (props)=>{
             <div className="about__info_tech">
                 <div className="tech flerow obs-anim-appear">
                     <img title="Javascript ES5/ES6+" alt="javascript" src={IMAGE_JAVASCRIPT}/>
-                    <img title="Node.js" src={IMAGE_NODEJS} alt="Node.js"/>
+                    <img title="C SHARP" src={IMAGE_CSHARP} alt="C SHARP"/>
                     <img title="React.js" src={IMAGE_REACT} alt="React.js"/>
+                    <img title="Node.js" src={IMAGE_NODEJS} alt="Node.js"/>
+                    <img title="Microsoft SQL SERVER" src={IMAGE_MSSQL} alt="Microsoft SQL SERVER"/>
                     <img title="MongoDB" src={IMAGE_MONGODB} alt="MongoDB"/>
                     <img title="HTML5" src={IMAGE_HTML} alt="HTML5"/>
                     <img title="CSS3" src={IMAGE_CSS} alt="CSS3"/>
-                    <img title="Microsoft SQL SERVER" src={IMAGE_MSSQL} alt="Microsoft SQL SERVER"/>
-                    <img title="C SHARP" src={IMAGE_CSHARP} alt="C SHARP"/>
                     <img title="SCSS/SASS" src={IMAGE_SASS} alt="SCSS/SASS"/>
                     <img title="NGINX" src={IMAGE_NGINX} alt="NGINX"/>
                     <img title="Godot Game Engine" src={IMAGE_GODOT} alt="Godot Game Engine"/>
