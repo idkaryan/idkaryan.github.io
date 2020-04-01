@@ -25,7 +25,7 @@ const About = (props)=>{
 
 
     // STATIC DATA
-    const DATA_ABOUTME = "That's me! :) Software development is not new to me. I've created android apps as well as games in the past and currently have decided to become a master of one trade alongside being the jack of all, thus making my foreseeable goal to 'creating a plethora of awesome web applications'. Currently, I work at Deloitte making web applications using .NET and C#. I keep learning new and relevant technologies and right now, I do full stack development using MongoDB, Node, Express and React. In my spare time, I like to read and write and would love to talk at length about our common interests should I get that opportunity.";
+    const DATA_ABOUTME = "That's me! :) Software development is not new to me. I've created android apps as well as games in the past and currently have decided to become a master of one trade alongside being the jack of all, thus making my foreseeable goal to 'creating a plethora of awesome web applications'. Currently, my work is making web applications using .NET and C#. I like to keep learning new technologies and have experience doing full stack development using MongoDB, Node, Express and React as well. In my spare time, I like to read and write and would love to talk at length about our common interests should I get that opportunity.";
     const DATA_HEXAGONS = [
         {
             header: "speed", 
