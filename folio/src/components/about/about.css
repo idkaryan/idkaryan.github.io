@@ -5,7 +5,7 @@
 .about__info {
   color: #333;
   margin-bottom: 10rem;
-  
+
   margin-top: 6rem;
 }
 
@@ -17,15 +17,15 @@
 }
 
 .about__info_aboutme {
-    text-align: justify;
-    max-width: 30vw;
-    justify-content: space-around;
-    margin:10px;
-    padding:2rem;
-    font-size: 1.5rem;
+  text-align: justify;
+  max-width: 30vw;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
-.about__info_aboutme img{
-  width:100%;
+.about__info_aboutme img {
+  width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -33,7 +33,7 @@
 .tech {
   max-width: 50vw;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   opacity: 0;
 }
 .tech img {
@@ -53,18 +53,18 @@
 }
 
 /* FOR TABLETS */
-@media all and (max-width: 920px){
-  .about__info{
+@media all and (max-width: 920px) {
+  .about__info {
     flex-direction: column;
   }
-  .about__info_aboutme{
+  .about__info_aboutme {
     align-self: center;
     max-width: 80%;
-    padding:0.5rem;
+    padding: 0.5rem;
     margin: 2rem 0;
   }
-  .about__info_aboutme img{
-    max-width:20rem;
+  .about__info_aboutme img {
+    max-width: 20rem;
     margin-bottom: 2rem;
   }
   .tech {
@@ -74,30 +74,29 @@
 }
 
 /* FOR MOBILE PHONES */
-@media all and (max-width: 600px){
-  .about__info{
+@media all and (max-width: 600px) {
+  .about__info {
     flex-direction: column !important;
   }
-  .about__info_aboutme{
+  .about__info_aboutme {
     max-width: 100%;
-    padding:0.5rem;
+    padding: 0.5rem;
     margin: 2rem 0;
   }
-  .about__info_aboutme img{
-    max-width:20rem;
+  .about__info_aboutme img {
+    max-width: 20rem;
     margin-bottom: 2rem;
   }
-  .tech{
+  .tech {
     max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
     /* border:1px solid red; */
   }
-  .tech img{
-    margin:0.5rem;
+  .tech img {
+    margin: 0.5rem;
     width: 40%;
     /* border:1px solid green; */
     height: auto;
   }
-
 }
