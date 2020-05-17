@@ -29,13 +29,13 @@ function App() {
       entries.forEach(entry => {
         // console.log(`${entry.target.id} ${entry.intersectionRatio}`);
         const entryNav = document.querySelector(`#nav-${entry.target.id}`);
-        if(entry.intersectionRatio === 0){
+        if (entry.intersectionRatio === 0) {
           entryNav.classList.remove("highlight");
         } else {
           entryNav.classList.add("highlight");
         }
       });
-    }, {threshold: [0, 0.1]});
+    }, { threshold: [0, 0.1] });
 
     const sectionTargets = document.querySelectorAll(".obs-section");
     sectionTargets.forEach(target => {
@@ -45,12 +45,12 @@ function App() {
     // SLIDE LEFT ELEMENTS
     const animObserverSlideLeft = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if(entry.intersectionRatio > 0){
+        if (entry.intersectionRatio > 0) {
           entry.target.classList.add("slide-left");
           animObserverSlideLeft.unobserve(entry.target);
         }
       });
-    }, {threshold: [0.5]});
+    }, { threshold: [0.5] });
 
     const animTargetsSlideLeft = document.querySelectorAll(".obs-anim");
     animTargetsSlideLeft.forEach(target => {
@@ -60,12 +60,12 @@ function App() {
     // JUST APPEAR ELEMENTS
     const animObserverAppear = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if(entry.intersectionRatio > 0){
+        if (entry.intersectionRatio > 0) {
           entry.target.classList.add("appear");
           animObserverAppear.unobserve(entry.target);
         }
       });
-    }, {threshold: [0.1]});
+    }, { threshold: [0.1] });
 
     const animTargetsAppear = document.querySelectorAll(".obs-anim-appear");
     animTargetsAppear.forEach(target => {
@@ -81,7 +81,7 @@ function App() {
           <p>
             Hello, I'm <span className="name">Kumar Aryan</span>.
           </p>
-          <p>I'm a full stack web developer.</p>
+          <p>I'm a full stack developer.</p>
         </div>
         <Navigation />
         <About />
