@@ -1,10 +1,9 @@
 
 .projects{
     background: #FFF;
-    
 }
 .project-item-container{
-    max-width:45rem;
+    max-width:60rem;
     flex-wrap: wrap;
     margin-bottom: 6rem;
     justify-content: center;

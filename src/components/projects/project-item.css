@@ -1,19 +1,21 @@
 .project-item-wrapper{
-    width:15rem;
-    height:15rem;
+    width:20rem;
+    height:20rem;
     position:relative;
     opacity: 0;
     
 }
 
 .project-item-wrapper img{
-    width:15rem;
-    height:15rem;
+    width:20rem;
+    height:20rem;
     object-fit: cover;
 }
 
 .project-item__info{
+    padding: 2rem;
     justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top:0%;
     left:0%;

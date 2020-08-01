@@ -24,7 +24,7 @@ import IMAGE_POSTGRE from "../../assets/postgre.png";
 const About = (props) => {
   // STATIC DATA
   const DATA_ABOUTME =
-    "That's me! :) Software development is not new to me. I've created android apps as well as games in the past and currently have decided to become a master of one trade alongside being the jack of all, thus making my foreseeable goal to 'creating a plethora of awesome web applications'. Currently, my work is making web applications using .NET and C#. I like to keep learning new technologies and have experience doing full stack development using MongoDB, Node, Express and React as well. In my spare time, I like to read and write and would love to talk at length about our common interests should I get that opportunity.";
+    "That's me. Software development is not new to me. I've created android apps as well as games in the past and currently have decided to become a master of one trade alongside being the jack of all, thus making my foreseeable goal creating a plethora of awesome web applications. Currently, my favorite pasttime on offwork hours is solving daily problems by automating tasks with .NET Core and learning about better software architecture. I like to keep learning new technologies and have experience with fullstack development with multiple stacks. I'm currently interested in improving both software skills and business ability. In my spare time which does not involve code, I like to read and write and would love to talk at length about our common interests should I get that opportunity.";
   const DATA_HEXAGONS = [
     {
       header: "speed",
